@@ -65,27 +65,23 @@ const ProdList = () => {
   //페이징
   const pageSize = 8;
   const [page, setPage] = useState(1);
-  const btnRange = 10;
-  const currentSet = Math.ceil(page / btnRange);
-  const firstPage = (currentSet - 1) * btnRange + 1
 
   const totalPages = useMemo(() => {
       return Math.max(1, Math.ceil(filtered.length / pageSize));
     }, [filtered.length, pageSize]);
 
-
-  const pagedList = useMemo(() => {
-      // const firstPage = (currentSet - 1) * pageSize;
+    const pagedList = useMemo(() => {
+      const firstPage = (page - 1) * pageSize;
       return filtered.slice(firstPage, firstPage + pageSize);
-  }, [filtered, page, pageSize]);
+    }, [filtered, page, pageSize]);
 
-  useEffect(() => {
-     if (page > totalPages) setPage(totalPages);
-  }, [page, totalPages]);
+    useEffect(() => {
+      if (page > totalPages) setPage(totalPages);
+    }, [page, totalPages]);
 
-  useEffect(() => {
+    useEffect(() => {
       setPage(1);
-  }, [searchText]);
+    }, [searchText]);
 
 
   useEffect(()=>{
@@ -208,20 +204,15 @@ const ProdList = () => {
               이전
             </button>
             <ul className="page_numbers">
-              {Array.from({ length: btnRange }, (_, i) => {
-                const pageNum = firstPage + i;
-                if (pageNum > totalPages) return null;
-                return (
-                  <li
-                  key={pageNum}
-                  onClick={()=> { setPage(pageNum)}}
-                  className={page === pageNum ? "active" : ""}
-                  disabled={page === pageNum}
-                  >
-                    {pageNum}
-                  </li>
-                )
-              })}
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map((num) => (
+                <li
+                  key={num}
+                  onClick={() => setPage(num)}
+                  className={page === num ? "active" : ""}
+                >
+                  {num}
+                </li>
+              ))}
             </ul>
             <button
               onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
