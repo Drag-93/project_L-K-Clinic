@@ -23,49 +23,33 @@ L&K Clinic은 사용자가 뷰티 상품을 구매하고 시술 상품을 예약
 | API | Kakao Map API |
 | Mock Server | JSON Server |
 
-## 🛠 기술 스택
 
+
+## 🛠 기술 스택
 ### Front-End
 
 <p>
   <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=black"/>
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=Vite&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Redux_Toolkit-764ABC?style=for-the-badge&logo=Redux&logoColor=white"/>
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white"/>
 </p>
 
-### State Management
-
-<p>
-  <img src="https://img.shields.io/badge/Redux_Toolkit-764ABC?style=for-the-badge&logo=Redux&logoColor=white"/>
-</p>
-
-### Library
-
-<p>
-  <img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=ReactRouter&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/React_Calendar-00C853?style=for-the-badge"/>
-</p>
-
-### API
+### API & Tools
 
 <p>
   <img src="https://img.shields.io/badge/Kakao_Map_API-FFCD00?style=for-the-badge&logo=Kakao&logoColor=black"/>
-</p>
-
-### Mock Server
-
-<p>
-  <img src="https://img.shields.io/badge/JSON_Server-000000?style=for-the-badge&logo=json&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JSON_Server-000000?style=for-the-badge"/>
 </p>
 
 ### Collaboration
 
 <p>
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=Figma&logoColor=white"/>
   <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white"/>
 </p>
+
 
 
 ## 🎬 프로젝트 미리보기
