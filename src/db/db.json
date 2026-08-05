@@ -1,5 +1,4 @@
 {
-  "$schema": "./node_modules/json-server/schema.json",
   "notice": [
     {
       "id": "1575",
@@ -145,6 +144,18 @@
       "address": "서울시 노원구 상계동",
       "gender": "남",
       "role": "ROLE_MEMBER",
+      "remark": ""
+    },
+    {
+      "id": "65e7",
+      "userName": "tester",
+      "userEmail": "tester@test.com",
+      "userPw": "11",
+      "phonenum": "01000000000",
+      "age": "",
+      "address": "",
+      "gender": "",
+      "role": "",
       "remark": ""
     }
   ],
@@ -2366,9 +2377,9 @@
       "writer": "이용근",
       "writerEmail": "faithyg@naver.com",
       "viewrate": 0,
-      "admin": "",
-      "answer": "",
-      "state": "답변대기"
+      "admin": "유저관리자계정",
+      "answer": "답변 내용",
+      "state": "답변완료"
     }
   ],
   "productOrders": [
@@ -2667,7 +2678,7 @@
           "count": 2,
           "totalPrice": 70000,
           "itemId": "f053",
-          "state": "배송준비중"
+          "state": "배송완료"
         },
         {
           "id": "deba",
@@ -2679,7 +2690,7 @@
           "count": 1,
           "totalPrice": 80000,
           "itemId": "deba",
-          "state": "배송준비중"
+          "state": "배송완료"
         },
         {
           "id": "e6cb",
@@ -2691,7 +2702,7 @@
           "count": 1,
           "totalPrice": 45000,
           "itemId": "e6cb",
-          "state": "배송준비중"
+          "state": "배송완료"
         }
       ],
       "totalAmount": 195000
@@ -3257,5 +3268,6 @@
       ],
       "totalAmount": 300000
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
