@@ -155,42 +155,6 @@ L&K Clinic은 **뷰티 상품 구매와 시술 예약을 하나의 플랫폼에�
 - 검색, 정렬, 필터 및 페이징 기능 동작 점검
 - 팀원별 작업 병합 이후 UI 충돌 및 기능 오류 수정
 
-## 🚀 실행 방법
-
-### 1. 프로젝트 클론
-
-```bash
-git clone https://github.com/Drag-93/project_L-K-Clinic.git
-cd project_L-K-Clinic
-```
-
-### 2. 패키지 설치
-
-```bash
-npm install
-```
-
-### 3. 환경 변수 설정
-
-프로젝트 루트에 `.env` 파일을 생성한 후 아래 내용을 입력합니다.
-
-```env
-VITE_KAKAO_MAP_KEY=본인의_카카오_JavaScript_API_KEY
-```
-
-> Kakao Developers에서 JavaScript API Key를 발급받아 입력해야 합니다.
-
-### 4. JSON Server 실행
-
-```bash
-npx json-server --watch src/db/db.json --host 0.0.0.0 --port 3001
-```
-
-### 5. 프로젝트 실행
-
-```bash
-npm run dev
-```
 
 ## 👥 팀원 구성
 
